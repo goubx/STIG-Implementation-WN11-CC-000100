@@ -34,11 +34,6 @@ As you can see from the results above, the scan showed that the manual remediati
 
 ## Scan results after removing manual remediation 
 
-
-
-
-
-
 [image]
 
 As you can see, the manual remediation was successfully removed because the audit has switched back to failed.
@@ -72,7 +67,7 @@ if ($Current -eq $Desired) {
 }
 ```
 
-## I am now going to run another scan to confirm whther or not, the powershell script was successful in passing the audit.
+## I am now going to run another scan to confirm whether or not, the powershell script was successful in passing the audit.
 
 [image]
 
