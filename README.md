@@ -30,9 +30,22 @@ Now, I will restart the machine and rerun the scan to see if the manual remediat
 
 [image]
 
-As you can see from the results above, the scan showed that the manual remediation was successful! Now im going to undo what i did and redo the scan to confirm manual remediation was removed so i can move on to a pragmatic solution.
+As you can see from the results above, the scan showed that the manual remediation was successful! Now I'm going to undo what I did and redo the scan to confirm manual remediation was removed so i can move on to a pragmatic solution.
 
 ## Scan results after removing manual remediation 
+
+
+
+
+
+
+[image]
+
+As you can see, the manual remediation was successfully removed because the audit has switched back to failed.
+
+## I am now going to create a pragmatic solution 
+
+Below is the pragmatic solution for this STIG I created with Claude.
 
 ```powershell
 # STIG WN11-CC-000100: Downloading print driver packages over HTTP must be prevented
@@ -59,14 +72,9 @@ if ($Current -eq $Desired) {
 }
 ```
 
-
-
-
+## I am now going to run another scan to confirm whther or not, the powershell script was successful in passing the audit.
 
 [image]
 
-As you can see, the manual remediation was successfully removed because the audit has switched back to failed.
+As you can see from above, the results from the scan were successful showing the audit was a success.
 
-## I am now going to create a pragmatic solution 
-
-Bellow is the pragmatic solution for this STIG i created with claude.
